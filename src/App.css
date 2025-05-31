@@ -1,0 +1,21 @@
+body{
+  background-color: rgb(187, 187, 187);
+}
+
+.login{
+  width: 35%;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+}
+
+input{
+  border: 1px solid black;
+  padding: .2rem;
+}
+input:focus{
+  border: none;
+}
+.lable{
+  margin-top:-20px;
+}
