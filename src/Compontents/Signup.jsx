@@ -2,16 +2,17 @@ import React, { useState } from 'react'
 
 function Signup() {
 
-    let [signupdata,setsignupdata]= useState([])
+    let [signupdata, setsignupdata] = useState([])
 
-    let inputvalue=(e)=>{
+    let inputvalue = (e) => {
         setsignupdata(
-            {...signupdata,[e.target.name]:e.target.value}
+            { ...signupdata, [e.target.name]: e.target.value }
         )
     }
+    console.log(signupdata)
     return (
         <>
-           <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 login">
+            <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 login">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <img
                         alt="Your Company"
@@ -61,7 +62,7 @@ function Signup() {
                                 <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900 lable">
                                     Password
                                 </label>
-                               
+
                             </div>
                             <div className="mt-2">
                                 <input onChange={inputvalue}
@@ -78,9 +79,8 @@ function Signup() {
                         <div>
                             <button
                                 type="submit"
-                                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                            >
-                                Sign in
+                                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                <a href='/login'>Sign Up</a>
                             </button>
                         </div>
                     </form>
